@@ -1,0 +1,71 @@
+number,file,level,requires,learning_goal
+1,01_connection.py,core,Webots,Connect and print the robot name and basic time step.
+2,02_robot_info.py,core,Webots,Inspect the devices and basic robot configuration.
+3,03_list_devices.py,core,Webots,"List available Webots motors, sensors, and camera."
+4,04_simulation_steps.py,core,Webots,Advance multiple basic steps.
+5,05_wait.py,core,Webots,Wait using simulated time (not time.sleep).
+6,06_start_timer.py,core,Webots,Start and read an activity timer.
+7,07_timer_expiration.py,core,Webots,Check whether a named timer has expired.
+8,08_reset_timer.py,core,Webots,Reset a timer after an event.
+9,09_two_timers.py,core,Webots,Measure nested phases with separate timers.
+10,10_stop.py,core,Webots,Initialize and stop all four wheels.
+11,11_forward.py,core,Webots,Move forward and stop.
+12,12_backward.py,core,Webots,Move backward and stop.
+13,13_turn_left.py,core,Webots,Turn left using skid steering.
+14,14_turn_right.py,core,Webots,Turn right using skid steering.
+15,15_wheel_speeds.py,core,Webots,Command left/right wheel groups directly.
+16,16_get_speeds.py,core,Webots,Read the last commanded wheel velocities.
+17,17_speed_clamping.py,core,Webots,Observe automatic clamping to the Pioneer motor limit.
+18,18_arc_left.py,core,Webots,Steer along a shallow left arc.
+19,19_arc_right.py,core,Webots,Steer along a shallow right arc.
+20,20_timed_forward.py,core,Webots,"Forward for a fixed duration, checking front sonars."
+21,21_timed_backward.py,core,Webots,Backward for a fixed duration.
+22,22_timed_turn_left.py,core,Webots,Left rotation with automatic stopping.
+23,23_timed_turn_right.py,core,Webots,Right rotation with automatic stopping.
+24,24_timed_differential.py,core,Webots,Timed differential movement with explicit wheel speeds.
+25,25_zero_duration.py,core,Webots,A zero-duration movement does not move the robot.
+26,26_movement_sequence.py,core,Webots,Execute a simple forward-turn-reverse sequence.
+27,27_conditional_movement.py,core,Webots,Use if/else with robot movement.
+28,28_repeat_turns.py,core,Webots,Repeat an action with a for loop.
+29,29_speed_ramp.py,core,Webots,Increase commanded wheel speeds gradually.
+30,30_sonar_raw.py,core,Webots,Read the raw value of sonar 3.
+31,31_sonar_meters.py,core,Webots,Read an approximate sonar distance in metres.
+32,32_all_sonars.py,core,Webots,Read all 16 Pioneer sonar sensors.
+33,33_front_distance.py,core,Webots,Read the nearest obstacle in front.
+34,34_left_distance.py,core,Webots,Read nearest obstacle on front-left side.
+35,35_right_distance.py,core,Webots,Read nearest obstacle on front-right side.
+36,36_rear_distance.py,core,Webots,Read the closest rear-facing obstacle.
+37,37_minimum_distance.py,core,Webots,Compare a selected group of sonars.
+38,38_obstacle_ahead.py,core,Webots,Test whether the front corridor is clear.
+39,39_obstacle_sides.py,core,Webots,Compare left and right obstacle flags.
+40,40_wheel_encoders.py,core,Webots,"Read wheel rotation position sensors, when present."
+41,41_safe_forward.py,core,Webots,Stop a timed forward command when a front sonar is close.
+42,42_choose_turn.py,core,Webots,Choose a direction based on left/right sensor readings.
+43,43_reactive_avoidance.py,core,Webots,Short reactive obstacle avoidance with a bounded loop.
+44,44_sonar_csv.py,core,Webots,Write a short sonar time series to CSV.
+45,45_camera_status.py,camera,Camera optional,Check whether the Pioneer camera is installed.
+46,46_camera_resolution.py,camera,Webots Camera,Read the camera image resolution.
+47,47_camera_capture.py,camera,Camera + NumPy,Capture one BGR image as a NumPy array.
+48,48_camera_save.py,camera,Camera + NumPy + OpenCV,Save a captured frame to outputs/camera.png.
+49,49_camera_preview.py,camera,Camera + NumPy + OpenCV,Open an OpenCV camera preview for one simulated second.
+50,50_yolo_load.py,yolo,Camera + YOLO,Load the YOLO11 nano pretrained model.
+51,51_yolo_detect.py,yolo,Camera + YOLO,Run YOLO once and print detection dictionaries.
+52,52_yolo_filter.py,yolo,Camera + YOLO,Filter detected people from all YOLO detections.
+53,53_yolo_count.py,yolo,Camera + YOLO,Count detected people and all objects.
+54,54_yolo_best.py,yolo,Camera + YOLO,Retrieve the highest-confidence detection.
+55,55_yolo_person_flag.py,yolo,Camera + YOLO,Test whether YOLO currently detects a person.
+56,56_yolo_object_center.py,yolo,Camera + YOLO,Get the centre of the strongest bounding box.
+57,57_yolo_object_side.py,yolo,Camera + YOLO,"Determine whether an object is left, centre, or right."
+58,58_yolo_annotated_preview.py,yolo,Camera + YOLO + OpenCV,Display a YOLO-annotated image.
+59,59_yolo_save_annotated.py,yolo,Camera + YOLO + OpenCV,Save a YOLO bounding-box visualization.
+60,60_yolo_inference_time.py,yolo,Camera + YOLO,Print measured YOLO inference latency.
+61,61_yolo_detection_log.py,integrated,Camera + YOLO,Record detections and confidence to CSV.
+62,62_vision_and_sonar.py,integrated,Camera + YOLO,Use YOLO and proximity sensors in the same decision.
+63,63_stop_on_person.py,integrated,Camera + YOLO,"Drive slowly, then stop when a person is detected."
+64,64_visual_search.py,integrated,Camera + YOLO,Rotate briefly in search of a person.
+65,65_vision_timing_budget.py,integrated,Camera + YOLO,Compare YOLO wall-clock latency with timestep duration.
+66,66_final_capstone.py,integrated,Camera + YOLO optional,"Integrate time, sonars, motion, optional camera and YOLO."
+67,67_close_preview_windows.py,camera,Camera + NumPy + OpenCV,Explicitly close OpenCV preview windows.
+68,68_api_self_check.py,core,Webots,Self-check main commands without requiring vision packages.
+69,69_manual_yolo_loading.py,yolo,Camera + YOLO,Load YOLO directly with dependency handling.
+70,70_explicit_close.py,core,Webots,Initialize and close the session explicitly.
