@@ -1,0 +1,5 @@
+# Install into the interpreter used by Webots (e.g. Python 3.12):
+# py -3.12 -m pip install -r requirements-vision.txt
+numpy>=1.24
+opencv-python>=4.8
+ultralytics>=8.3

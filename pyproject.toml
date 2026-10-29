@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robostart-educational"
+version = "0.1.0"
+description = "Introductory educational robotics wrapper for Webots Pioneer 3-AT"
+requires-python = ">=3.10"
+authors = [{name = "RoboStart contributors"}]
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+vision = ["numpy>=1.24", "opencv-python>=4.8", "ultralytics>=8.3"]
+
+[tool.setuptools.packages.find]
+include = ["robostart*"]
